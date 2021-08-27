@@ -126,7 +126,7 @@ cd recommendation/virtualized
 docker build -t example/recommendation:virtualized .
 docker images | grep recommendation
 
-oc apply -f <(istioctl kube-inject -f link:{github-repo}/{preference-repo}/kubernetes/Deployment-virtualized.yml[../../kubernetes/Deployment-virtualized.yml]) -n tutorial
+oc apply -f <(istioctl kube-inject -f link:{github-repo}/{recommendation-repo}/kubernetes/Deployment-virtualized.yml[../../kubernetes/Deployment-virtualized.yml]) -n tutorial
 oc get pods -w
 
 cd ../..
